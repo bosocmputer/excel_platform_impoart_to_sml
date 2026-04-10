@@ -140,7 +140,7 @@ class SMLClient:
         return None
 
     def create_invoice(self, payload: dict):
-        url = f"{self.base_url}/SMLJavaRESTService/saleinvoice/"
+        url = f"{self.base_url}/SMLJavaRESTService/restapi/saleinvoice"
         r = requests.post(url, headers=self.headers,
                           json=payload, timeout=REQUEST_TIMEOUT)
         try:
